@@ -10,6 +10,15 @@ module.exports = {
             screens: {
                 ldxs: { raw: "(max-height: 530px)" },
             },
+            colors: {
+                c_black: "#000000",
+                c_purpleB: "#1b0b1b",
+                c_purple: "#522151",
+                c_purpleC: "#6d2c6c",
+                c_pinkB: "#8c415d",
+                c_pink: "#c67591",
+                c_pinkC: "#ffa9c5",
+            },
         },
         screens: {
             xs: "475px",
