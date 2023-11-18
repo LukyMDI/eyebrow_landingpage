@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FaHouse, FaBookOpen, FaHammer, FaSquarePhone } from "react-icons/fa6";
 
 export default function MobileMenu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ export default function MobileMenu() {
 
     return (
         <div>
-            <button onClick={toggleMenu} className="block text-gray-500">
+            <button onClick={toggleMenu} className="block text-c_purpleC">
                 <svg
                     className="h-6 w-6"
                     fill="none"
@@ -38,18 +39,25 @@ export default function MobileMenu() {
             <div
                 className={`${
                     isOpen ? "translate-x-0" : "translate-x-full"
-                } fixed top-0 right-0 h-full w-2/3 bg-gray-800 text-white transition-transform ease-in-out duration-300 -z-10`}
+                } fixed top-0 right-0 h-full w-2/3 bg-c_black text-c_purpleC text-xl transition-transform ease-in-out duration-300 -z-10 flex justify-center`}
             >
-                <div className="p-4">
-                    <a href="#" className="block py-2">
-                        Item 1
-                    </a>
-                    <a href="#" className="block py-2">
-                        Item 2
-                    </a>
-                    <a href="#" className="block py-2">
-                        Item 3
-                    </a>
+                <div className="flex flex-col gap-10 mt-24">
+                    <li className="flex gap-5 items-center">
+                        <FaHouse />
+                        <a href="#">Home</a>
+                    </li>
+                    <li className="flex gap-5 items-center">
+                        <FaBookOpen />
+                        <a href="#sobre">Sobre nós</a>
+                    </li>
+                    <li className="flex gap-5 items-center">
+                        <FaHammer />
+                        <a href="#servicos">Serviços</a>
+                    </li>
+                    <li className="flex gap-5 items-center">
+                        <FaSquarePhone />
+                        <a href="#contato">Contato</a>
+                    </li>
                 </div>
             </div>
         </div>
