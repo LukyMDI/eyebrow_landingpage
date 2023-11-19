@@ -6,7 +6,7 @@ import SobreNos from "@/components/sections/SobreNos";
 
 export default function Page() {
     return (
-        <div className="w-full grid grid-rows-4 min-h-screen">
+        <div className="w-full grid grid-rows-4 min-h-screen scroll-smooth">
             <Navbar />
             <Home />
             <SobreNos />

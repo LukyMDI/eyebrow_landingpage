@@ -9,10 +9,10 @@ export default function Home() {
                 id="home"
                 className="bg-[url('../../public/images/bg-1.webp')] bg-cover bg-no-repeat w-full h-screen min-h-[500px] grid grid-cols-1 grid-rows-3 justify-items-center"
             >
-                <div className="flex flex-col items-center text-c_purple font-bold text-3xl self-center col-span-1">
+                <div className="flex flex-col items-center text-c_pinkC font-extrabold text-3xl self-center col-span-1">
                     <h1>STUDIO</h1>
                     <h1>CAMILE QUATRIN</h1>
-                    <hr className="w-64 border-b-[3px] border-black" />
+                    <hr className="w-64 border-b-[3px] rounded border-c_purple" />
                 </div>
                 <div className="self-start col-span-1 z-0">
                     <div className="relative w-40 h-40 border-4 border-solid border-c_purple">

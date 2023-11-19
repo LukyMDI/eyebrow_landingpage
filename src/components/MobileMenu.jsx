@@ -10,6 +10,10 @@ export default function MobileMenu() {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
         <div>
             <button onClick={toggleMenu} className="block text-c_purpleC">
@@ -44,19 +48,27 @@ export default function MobileMenu() {
                 <div className="flex flex-col gap-10 mt-24">
                     <li className="flex gap-5 items-center">
                         <FaHouse />
-                        <a href="#">Home</a>
+                        <a href="#" onClick={closeMenu}>
+                            Home
+                        </a>
                     </li>
                     <li className="flex gap-5 items-center">
                         <FaBookOpen />
-                        <a href="#sobre">Sobre nós</a>
+                        <a href="#sobre" onClick={closeMenu}>
+                            Sobre nós
+                        </a>
                     </li>
                     <li className="flex gap-5 items-center">
                         <FaHammer />
-                        <a href="#servicos">Serviços</a>
+                        <a href="#servicos" onClick={closeMenu}>
+                            Serviços
+                        </a>
                     </li>
                     <li className="flex gap-5 items-center">
                         <FaSquarePhone />
-                        <a href="#contato">Contato</a>
+                        <a href="#contato" onClick={closeMenu}>
+                            Contato
+                        </a>
                     </li>
                 </div>
             </div>

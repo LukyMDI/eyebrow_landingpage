@@ -1,6 +1,6 @@
 export default function Contato() {
     return (
-        <section className="bg-c_purple">
+        <section id="contato" className="bg-c_purple">
             <div>
                 <h1>CONTATO</h1>
             </div>

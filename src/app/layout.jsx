@@ -1,7 +1,7 @@
-import { Pontano_Sans } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const pontano = Pontano_Sans({ subsets: ["latin"] });
+const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
     title: "Studio Camile Quatrin",
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="pt-br">
-            <body className={pontano.className}>{children}</body>
+            <body className={roboto.className}>{children}</body>
         </html>
     );
 }
