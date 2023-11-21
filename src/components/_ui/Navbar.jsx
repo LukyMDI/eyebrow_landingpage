@@ -9,8 +9,8 @@ import c_250 from "../../../public/images/c_250.webp";
 export default function Navbar() {
     return (
         <header className="w-full text-white fixed grid grid-cols-2 z-10 items-center">
-            <div className="col-span-1 my-2 ml-5">
-                <Image src={c_250} quality={100} width={70} priority={true} />
+            <div className="col-span-1 my-2 ml-5 w-20">
+                <Image src={c_250} quality={100} priority={true} />
             </div>
             <div className="col-span-1 sm:hidden justify-self-end mr-10 z-10">
                 <MobileMenu />

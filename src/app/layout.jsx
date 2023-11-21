@@ -1,7 +1,6 @@
-import { Roboto } from "next/font/google";
-import "./globals.css";
+import { roboto } from "@/styles/fonts/fonts";
 
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+import "./globals.css";
 
 export const metadata = {
     title: "Studio Camile Quatrin",
