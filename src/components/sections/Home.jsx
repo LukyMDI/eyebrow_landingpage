@@ -13,9 +13,9 @@ export default function Home() {
                 <div
                     className={`${lato.className} flex font-playfair flex-col items-center text-white font-black text-3xl self-center col-span-1`}
                 >
-                    <h1 className="text-xl">INOVANDO</h1>
-                    <h1>SUA BELEZA</h1>
-                    <hr className="w-52 border-b-[3px] rounded border-c_purpleC" />
+                    <h1 className="text-lg">REALÇANDO A BELEZA</h1>
+                    <h1>DO SEU OLHAR</h1>
+                    <hr className="w-56 border-b-[3px] rounded border-c_purpleC" />
                 </div>
                 <div className="w-full flex justify-center col-span-1 z-0">
                     <div className="relative w-5/6 h-4/6 border-4 border-solid border-c_purpleC rounded-md">
