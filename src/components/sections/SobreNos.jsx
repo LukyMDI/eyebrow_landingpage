@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import eyebrow_2 from "../../../public/images/eyebrow_2.jpg";
+import eyebrow_2 from "../../../public/images/eyebrow_2.webp";
 
 import { lato } from "@/styles/fonts/fonts";
 
@@ -46,7 +46,8 @@ export default function SobreNos() {
                             dedicado a cada cliente, garantindo não apenas
                             sobrancelhas impecáveis, mas também uma experiência
                             que inspira confiança e autoestima. Venha descobrir
-                            como suas sobrancelhas podem contar a sua história.
+                            como suas sobrancelhas podem contar a{" "}
+                            <strong>sua história</strong>.
                         </p>
                     </div>
                 </div>

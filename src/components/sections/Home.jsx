@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import modelo_1 from "../../../public/images/eyebrow_1.jpg";
+import modelo_1 from "../../../public/images/eyebrow_1.webp";
 import { lato } from "@/styles/fonts/fonts";
 
 export default function Home() {
