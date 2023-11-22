@@ -9,7 +9,7 @@ export default function SobreNos() {
         <>
             <section
                 id="sobre"
-                className="bg-zinc-900 w-full h-screen flex flex-col items-center justify-around"
+                className="bg-zinc-900 w-full h-screen flex flex-col items-center justify-evenly"
             >
                 <div>
                     <h1
