@@ -11,7 +11,7 @@ export default function Home() {
                 className="bg-[url('../../public/images/bg-1.webp')] bg-cover bg-no-repeat w-full h-screen min-h-[500px] grid grid-cols-1 grid-rows-3 justify-items-center"
             >
                 <div
-                    className={`${lato.className} flex font-playfair flex-col items-center text-white font-black text-3xl self-center col-span-1`}
+                    className={`${lato.className} flex font-playfair flex-col items-center text-white font-black text-3xl self-center col-span-1 mt-16`}
                 >
                     <h1 className="text-lg">REALÇANDO A BELEZA</h1>
                     <h1>DO SEU OLHAR</h1>
@@ -28,7 +28,7 @@ export default function Home() {
                         />
                     </div>
                 </div>
-                <div className="border-4 rounded-md border-white w-11/12 h-5/6 col-span-1 bg-black/70 p-5">
+                <div className="border-4 rounded-md border-white w-11/12 h-5/6 col-span-1 bg-black/70 p-5 overflow-auto box-border">
                     <div
                         className={`${lato.className} text-white text-center font-black text-lg`}
                     >
@@ -36,16 +36,18 @@ export default function Home() {
                         <h1>CAMILE QUATRIN</h1>
                     </div>
                     <div className="flex flex-row justify-center items-center gap-3 mt-1">
-                        <div className="w-16 rounded-full bg-white h-[3px]" />
+                        <div className="w-16 rounded-full bg-gray-500 h-[3px]" />
                         <span className="text-c_purpleC font-black">
                             Since 2023
                         </span>
-                        <div className="w-16 rounded-full bg-white h-[3px]" />
+                        <div className="w-16 rounded-full bg-gray-500 h-[3px]" />
                     </div>
                     <div className="text-white text-justify mt-3">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Ipsum ea quam iure, nam reprehenderit nostrum
+                            Transforme o olhar, eleve a confiança. Descubra o
+                            poder de sobrancelhas perfeitamente moldadas e
+                            desenhadas sob medida para você. Deixe minha paixão
+                            pela arte das sobrancelhas realçar sua beleza única.
                         </p>
                     </div>
                 </div>
