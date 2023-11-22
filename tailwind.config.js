@@ -14,7 +14,7 @@ module.exports = {
                 c_black: "#000000",
                 c_purpleB: "#1b0b1b",
                 c_purple: "#522151",
-                c_purpleC: "#6d2c6c",
+                c_purpleC: "#6A5ACD",
                 c_pinkB: "#8c415d",
                 c_pink: "#c67591",
                 c_pinkC: "#ffa9c5",
