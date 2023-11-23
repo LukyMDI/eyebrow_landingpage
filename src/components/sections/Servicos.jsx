@@ -13,7 +13,7 @@ export default function Servicos() {
                     <h1
                         className={`${lato.className} font-black text-2xl text-white`}
                     >
-                        SERVICOS
+                        SERVIÇOS
                     </h1>
                     <div className="bg-c_purpleC w-36 h-[3px]" />
                 </div>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import DatePicker, { registerLocale, setDefaultLocale } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import ptBR from "date-fns/locale/pt-BR";
+import { FaUser, FaPhone } from "react-icons/fa6";
 
 import { lato } from "@/styles/fonts/fonts";
 
@@ -31,29 +32,33 @@ export default function Agendamento() {
             </div>
             <form
                 onSubmit={handleSubmit}
-                className="flex w-full h-full flex-col items-center justify-evenly border border-solid border-white rounded bg-c_purpleC"
+                className="flex w-full h-full flex-col items-center justify-evenly border border-solid border-c_purpleC rounded bg-white"
             >
-                <div className="flex flex-col">
-                    <label htmlFor="nome" className="text-white">
+                <div className="flex flex-col items-center w-5/6 relative">
+                    <FaUser className="absolute left-2 bottom-2" />
+                    <label htmlFor="nome" className="text-black hidden">
                         Insira seu nome
                     </label>
                     <input
                         type="text"
                         id="nome"
-                        className="outline-none px-1 rounded-sm text-c_purpleC caret-c_purpleC"
+                        className="outline-none px-1 text-black border-b border-black w-full mt-5 bg-transparent pl-[35px]"
+                        placeholder="Nome"
                     />
                 </div>
-                <div className="flex flex-col">
-                    <label htmlFor="numero" className="text-white">
+                <div className="flex flex-col items-center w-5/6 relative">
+                    <FaPhone className="absolute left-2 bottom-2" />
+                    <label htmlFor="numero" className="text-black hidden">
                         Insira seu número
                     </label>
                     <input
                         type="tel"
                         id="numero"
-                        className="outline-none px-1 rounded-sm text-c_purpleC caret-c_purpleC"
+                        className="outline-none px-1 text-black border-b border-black w-full bg-transparent pl-[35px]"
+                        placeholder="Telefone"
                     />
                 </div>
-                <div>
+                <div className="w-full flex justify-center">
                     {/* <input
                         type="datetime-local"
                         name=""
@@ -70,10 +75,13 @@ export default function Agendamento() {
                         locale={"pt-BR"}
                         showTimeSelect
                         showIcon
-                        className="outline-none text-center rounded text-c_purpleC"
+                        className="outline-none text-black border-b border-black bg-transparent"
                     />
                 </div>
-                <button type="submit" className="bg-white p-2 rounded">
+                <button
+                    type="submit"
+                    className="bg-c_purpleC p-2 rounded border border-black"
+                >
                     Agendar
                 </button>
             </form>
