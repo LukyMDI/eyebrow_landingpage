@@ -20,7 +20,7 @@ export default function Agendamento() {
     };
 
     return (
-        <div className="w-5/6 h-3/6 flex flex-col items-center">
+        <div className="w-5/6 h-3/6 flex flex-col items-center mb-5">
             <div className="mb-7">
                 <h1
                     className={`${lato.className} text-white font-black text-2xl text-center`}
