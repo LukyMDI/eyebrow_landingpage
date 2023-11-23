@@ -1,11 +1,12 @@
 import { lato } from "@/styles/fonts/fonts";
 import BoxServices from "../BoxServices";
+import Agendamento from "../Agendamento";
 
 export default function Servicos() {
     return (
         <section
             id="servicos"
-            className="bg-[url('../../public/images/eyebrow_3.webp')] bg-cover bg-no-repeat flex justify-center"
+            className="bg-[url('../../public/images/eyebrow_3.webp')] bg-cover bg-no-repeat flex flex-col items-center gap-10"
         >
             <div className="w-full flex flex-col items-center">
                 <div className="my-10 flex flex-col items-center">
@@ -18,6 +19,7 @@ export default function Servicos() {
                 </div>
                 <BoxServices />
             </div>
+            <Agendamento />
         </section>
     );
 }

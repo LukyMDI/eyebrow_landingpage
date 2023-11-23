@@ -3,7 +3,7 @@ import { FaFan } from "react-icons/fa6";
 
 export default function BoxServices() {
     return (
-        <div className="grid grid-rows-3 grid-cols-2 gap-5 w-5/6 text-c_purpleC">
+        <div className="grid grid-rows-2 grid-cols-2 gap-5 w-5/6 text-c_purpleC">
             {/* <div className="border-2 h-[60px]">
                 <span>Design de Sobracelhas</span>
             </div>
@@ -28,9 +28,7 @@ export default function BoxServices() {
             />
             <MiniBoxServices title={"Henna"} icon={<FaFan />} />
             <MiniBoxServices title={"Manutenção"} icon={<FaFan />} />
-            <MiniBoxServices title={"Sem Nome"} icon={<FaFan />} />
-            <MiniBoxServices title={"Sem Nome"} icon={<FaFan />} />
-            <MiniBoxServices title={"Sem Nome"} icon={<FaFan />} />
+            <MiniBoxServices title={"Massagem Facial"} icon={<FaFan />} />
         </div>
     );
 }
