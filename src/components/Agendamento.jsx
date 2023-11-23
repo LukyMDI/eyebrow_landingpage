@@ -65,7 +65,8 @@ export default function Agendamento() {
                     <DatePicker
                         selected={data}
                         onChange={(date) => setData(date)}
-                        dateFormat={"dd/MM/yyyy"}
+                        dateFormat={"dd/MM/yyyy HH:mm"}
+                        timeFormat="HH:mm"
                         locale={"pt-BR"}
                         showTimeSelect
                         showIcon
