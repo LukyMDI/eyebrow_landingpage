@@ -10,10 +10,7 @@ export default function Footer() {
                 <Image src={c_total} quality={100} priority={true} />
             </div>
             <div className="text-c_purpleC text-xl flex w-full justify-center gap-1 mb-3">
-                <a
-                    href="https://wa.me/5582996910363/?text=${message}"
-                    target="_blank"
-                >
+                <a href="https://wa.me/5582999821904/" target="_blank">
                     <FaSquareWhatsapp />
                 </a>
                 <a

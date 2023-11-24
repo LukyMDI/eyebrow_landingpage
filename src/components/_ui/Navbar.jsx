@@ -10,7 +10,9 @@ export default function Navbar() {
     return (
         <header className="w-full fixed grid grid-cols-2 z-10 items-center">
             <div className="col-span-1 my-2 ml-5 w-20">
-                <Image src={c_total} quality={100} priority={true} />
+                <a href="/">
+                    <Image src={c_total} quality={100} priority={true} />
+                </a>
             </div>
             <div className="col-span-1 sm:hidden justify-self-end mr-10 z-10">
                 <MobileMenu />

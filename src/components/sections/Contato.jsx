@@ -11,7 +11,7 @@ export default function Contato() {
     function handleMessage(e) {
         e.preventDefault();
 
-        const linkWhats = `https://wa.me/5582996910363/?text=${message}`;
+        const linkWhats = `https://wa.me/5582999821904/?text=${message}`;
 
         window.open(linkWhats);
         setMessage("");

@@ -48,7 +48,7 @@ export default function MobileMenu() {
                 <div className="flex flex-col gap-10 mt-24">
                     <li className="flex gap-5 items-center">
                         <FaHouse />
-                        <a href="#" onClick={closeMenu}>
+                        <a href="#home" onClick={closeMenu}>
                             Home
                         </a>
                     </li>
