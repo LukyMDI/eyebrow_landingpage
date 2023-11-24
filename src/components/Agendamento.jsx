@@ -97,7 +97,7 @@ export default function Agendamento() {
             ) : (
                 <form
                     onSubmit={handleSubmit}
-                    className="flex w-full h-full flex-col items-center justify-evenly border border-solid border-c_purpleC rounded bg-white"
+                    className="flex w-full h-full flex-col items-center justify-evenly border border-solid border-c_purpleC rounded bg-white px-5"
                 >
                     {result && (
                         <div
@@ -110,7 +110,7 @@ export default function Agendamento() {
                             <span className="w-5/6">{result}</span>
                         </div>
                     )}
-                    <div className="flex flex-col items-center w-5/6 relative">
+                    <div className="flex flex-col items-center w-full relative">
                         <FaUser className="absolute left-2 bottom-2" />
                         <label htmlFor="nome" className="text-black hidden">
                             Insira seu nome
@@ -125,7 +125,7 @@ export default function Agendamento() {
                             value={formData.nome}
                         />
                     </div>
-                    <div className="flex flex-col items-center w-5/6 relative">
+                    <div className="flex flex-col items-center w-full relative">
                         <FaEnvelope className="absolute left-2 bottom-2" />
                         <label htmlFor="email" className="text-black hidden">
                             Insira seu email
@@ -140,7 +140,7 @@ export default function Agendamento() {
                             value={formData.email}
                         />
                     </div>
-                    <div className="flex flex-col items-center w-5/6 relative">
+                    <div className="flex flex-col items-center w-full relative">
                         <FaPhone className="absolute left-2 bottom-2" />
                         <label htmlFor="numero" className="text-black hidden">
                             Insira seu número
@@ -156,14 +156,6 @@ export default function Agendamento() {
                         />
                     </div>
                     <div className="w-full flex justify-center">
-                        {/* <input
-                        type="datetime-local"
-                        name=""
-                        id=""
-                        className="outline-none"
-                        value={data}
-                        onChange={(e) => setDate(e.target.value)}
-                    /> */}
                         <DatePicker
                             selected={formData.data}
                             onChange={handleDateChange}
@@ -175,12 +167,12 @@ export default function Agendamento() {
                             minDate={new Date()}
                             minTime={new Date().setHours(8, 0, 0)}
                             maxTime={new Date().setHours(18, 0, 0)}
-                            className="outline-none text-black border-b border-black bg-transparent"
+                            className="outline-none text-black border rounded border-black bg-transparent"
                         />
                     </div>
                     <button
                         type="submit"
-                        className="bg-c_purpleC p-2 rounded border border-black"
+                        className="bg-c_purpleC text-white p-2 rounded border border-black w-full"
                     >
                         Agendar
                     </button>
