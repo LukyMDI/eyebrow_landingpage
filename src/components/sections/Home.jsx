@@ -21,10 +21,10 @@ export default function Home() {
                     <div className="relative w-5/6 border-4 border-solid border-c_purpleC rounded-md">
                         <Image
                             src={modelo_1}
-                            objectFit="cover"
                             fill
                             quality={100}
                             priority={true}
+                            className="object-cover"
                         />
                     </div>
                 </div>

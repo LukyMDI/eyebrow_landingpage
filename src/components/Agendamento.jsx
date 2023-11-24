@@ -12,12 +12,49 @@ registerLocale("pt-BR", ptBR);
 setDefaultLocale("pt-BR");
 
 export default function Agendamento() {
-    const [data, setData] = useState(null);
+    const [formData, setFormData] = useState({
+        nome: "",
+        numero: "",
+        data: "",
+    });
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        console.log(data);
+        // console.log(formData);
+
+        try {
+            const response = await fetch("/api/agendamento", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log("Agendamento feito: ", data);
+            } else {
+                console.error("Erro ao agendar:", response.status);
+            }
+        } catch (error) {
+            console.error("Erro ao agendar:", error);
+        }
+    };
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
+
+    const handleDateChange = (date) => {
+        setFormData({
+            ...formData,
+            data: date,
+        });
     };
 
     return (
@@ -44,6 +81,8 @@ export default function Agendamento() {
                         id="nome"
                         className="outline-none px-1 text-black border-b border-black w-full mt-5 bg-transparent pl-[35px]"
                         placeholder="Nome"
+                        name="nome"
+                        onChange={handleChange}
                     />
                 </div>
                 <div className="flex flex-col items-center w-5/6 relative">
@@ -56,6 +95,8 @@ export default function Agendamento() {
                         id="numero"
                         className="outline-none px-1 text-black border-b border-black w-full bg-transparent pl-[35px]"
                         placeholder="Telefone"
+                        name="numero"
+                        onChange={handleChange}
                     />
                 </div>
                 <div className="w-full flex justify-center">
@@ -68,8 +109,8 @@ export default function Agendamento() {
                         onChange={(e) => setDate(e.target.value)}
                     /> */}
                     <DatePicker
-                        selected={data}
-                        onChange={(date) => setData(date)}
+                        selected={formData.data}
+                        onChange={handleDateChange}
                         dateFormat={"dd/MM/yyyy HH:mm"}
                         timeFormat="HH:mm"
                         locale={"pt-BR"}
