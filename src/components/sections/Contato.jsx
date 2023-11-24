@@ -20,7 +20,7 @@ export default function Contato() {
     return (
         <section
             id="contato"
-            className="bg-zinc-900 flex flex-col items-center justify-evenly"
+            className="bg-zinc-900 flex flex-col items-center h-[600px] justify-evenly"
         >
             <div>
                 <h1
@@ -39,7 +39,7 @@ export default function Contato() {
                 />
                 <button
                     onClick={handleMessage}
-                    className="bg-green-600 px-5 py-2 text-xl w-full text-white rounded flex items-center justify-center gap-2"
+                    className="bg-c_purpleC px-5 py-2 text-xl w-full text-white rounded flex items-center justify-center gap-2"
                 >
                     Enviar
                     <FaWhatsapp className="text-2xl" />

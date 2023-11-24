@@ -6,7 +6,7 @@ export default function Servicos() {
     return (
         <section
             id="servicos"
-            className="bg-[url('../../public/images/eyebrow_3.webp')] bg-cover bg-no-repeat flex flex-col items-center gap-10"
+            className="bg-[url('../../public/images/eyebrow_3.webp')] bg-cover bg-no-repeat flex flex-col items-center gap-10 h-screen"
         >
             <div className="w-full flex flex-col items-center">
                 <div className="my-10 flex flex-col items-center">

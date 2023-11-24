@@ -8,7 +8,7 @@ export default function Home() {
         <>
             <section
                 id="home"
-                className="bg-[url('../../public/images/bg-1.webp')] bg-cover bg-no-repeat w-full  min-h-[500px] flex flex-col items-center justify-evenly"
+                className="bg-[url('../../public/images/bg-1.webp')] bg-cover bg-no-repeat w-full h-screen flex flex-col items-center justify-evenly"
             >
                 <div
                     className={`${lato.className} flex font-playfair flex-col items-center text-white font-black text-3xl self-center mt-16`}
