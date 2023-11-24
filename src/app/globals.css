@@ -10,3 +10,19 @@
 body {
     @apply bg-sky-200;
 }
+
+::-webkit-scrollbar {
+    background-color: gray;
+    width: 10px;
+    scrollbar-width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(165, 165, 165);
+    border-radius: 15px;
+    scrollbar-color: rgb(165, 165, 165);
+}
+
+::-webkit-scrollbar-track {
+    margin: 5px 0px 5px 0px;
+}

@@ -1,22 +1,49 @@
-import Link from "next/link";
+"use client";
+
+import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa6";
+
+import { lato } from "@/styles/fonts/fonts";
 
 export default function Contato() {
-    const linkWhats = "https://wa.me/5582996910363/?text=textourl";
+    const [message, setMessage] = useState("");
+
+    function handleMessage(e) {
+        e.preventDefault();
+
+        const linkWhats = `https://wa.me/5582996910363/?text=${message}`;
+
+        window.open(linkWhats);
+        setMessage("");
+    }
 
     return (
         <section
             id="contato"
-            className="bg-c_purple flex flex-col items-center"
+            className="bg-zinc-900 flex flex-col items-center justify-evenly"
         >
             <div>
-                <h1>CONTATO</h1>
-                <a
-                    href={linkWhats}
-                    target="_blank"
-                    className="bg-green-600 text-white p-3 rounded"
+                <h1
+                    className={`${lato.className} text-3xl font-black text-white`}
                 >
-                    Clique Aqui senhor
-                </a>
+                    Contato
+                </h1>
+                <div className="w-28 h-[3px] bg-c_purpleC" />
+            </div>
+            <div className="w-5/6 border border-white p-3 rounded flex flex-col items-center justify-center gap-3 bg-white">
+                <textarea
+                    className="h-[200px] w-full bg-transparent p-3 border border-black rounded text-black resize-none"
+                    placeholder="Mensagem"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                />
+                <button
+                    onClick={handleMessage}
+                    className="bg-green-600 px-5 py-2 text-xl w-full text-white rounded flex items-center justify-center gap-2"
+                >
+                    Enviar
+                    <FaWhatsapp className="text-2xl" />
+                </button>
             </div>
         </section>
     );
