@@ -10,8 +10,18 @@ export default function Footer() {
                 <Image src={c_total} quality={100} priority={true} />
             </div>
             <div className="text-c_purpleC text-xl flex w-full justify-center gap-1 mb-3">
-                <FaSquareWhatsapp />
-                <FaSquareInstagram />
+                <a
+                    href="https://wa.me/5582996910363/?text=${message}"
+                    target="_blank"
+                >
+                    <FaSquareWhatsapp />
+                </a>
+                <a
+                    href="https://www.instagram.com/studiocamilequatrin/"
+                    target="_blank"
+                >
+                    <FaSquareInstagram />
+                </a>
             </div>
             <span className="text-[0.650rem] text-gray-500">
                 &copy;{new Date().getFullYear()} Studio Camile Quatrin. Todos os
