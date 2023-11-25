@@ -20,16 +20,14 @@ export default function SobreNos() {
                     <div className="w-16 h-[3px] bg-c_purpleC" />
                 </div>
                 <div className="flex flex-col items-center w-full">
-                    <div className="relative top-6">
+                    <div className="relative top-6 flex justify-center">
                         <Image
                             src={eyebrow_2}
                             priority={true}
-                            objectFit="cover"
                             placeholder="blur"
                             quality={100}
-                            layout="responsive"
-                            sizes="50vw"
-                            className="rounded-md"
+                            alt="Imagem de uma modelo fazendo sua sobrancelha"
+                            className="rounded-md object-cover w-2/6"
                         />
                     </div>
                     <div className="bg-c_purpleC p-5 w-11/12 text-white rounded-md">

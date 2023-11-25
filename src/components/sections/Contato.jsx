@@ -30,9 +30,9 @@ export default function Contato() {
                 </h1>
                 <div className="w-28 h-[3px] bg-c_purpleC" />
             </div>
-            <div className="w-5/6 border border-white p-3 rounded flex flex-col items-center justify-center gap-3 bg-white">
+            <div className="w-5/6 border border-white p-3 rounded flex flex-col items-center justify-center gap-3 bg-transparent">
                 <textarea
-                    className="h-[200px] w-full bg-transparent p-3 border border-black rounded text-black resize-none"
+                    className="h-[200px] w-full bg-transparent p-3 border border- rounded text-white resize-none"
                     placeholder="Mensagem"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}

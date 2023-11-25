@@ -7,9 +7,14 @@ export default function Footer() {
     return (
         <footer className="p-3 bg-gray-900 flex flex-col items-center gap-2">
             <div className="col-span-1 my-2 w-20">
-                <Image src={c_total} quality={100} priority={true} />
+                <Image
+                    src={c_total}
+                    quality={100}
+                    priority={true}
+                    alt="Logo do Studio"
+                />
             </div>
-            <div className="text-c_purpleC text-xl flex w-full justify-center gap-1 mb-3">
+            <div className="text-c_purpleC text-3xl flex w-full justify-center gap-1 mb-3">
                 <a href="https://wa.me/5582999821904/" target="_blank">
                     <FaSquareWhatsapp />
                 </a>

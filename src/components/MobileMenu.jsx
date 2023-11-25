@@ -18,7 +18,7 @@ export default function MobileMenu() {
         <div>
             <button onClick={toggleMenu} className="block text-c_purpleC">
                 <svg
-                    className="h-6 w-6"
+                    className="w-6  sm:w-8"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -43,7 +43,7 @@ export default function MobileMenu() {
             <div
                 className={`${
                     isOpen ? "translate-x-0" : "translate-x-full"
-                } fixed top-0 right-0 h-full w-2/3 bg-c_black text-c_purpleC text-xl transition-transform ease-in-out duration-300 -z-10 flex justify-center`}
+                } fixed top-0 right-0 h-full w-2/3 bg-c_black text-c_purpleC text-xl transition-transform ease-in-out duration-300 -z-10 flex justify-center   xs:w-2/4   sm:w-1/3`}
             >
                 <div className="flex flex-col gap-10 mt-24">
                     <li className="flex gap-5 items-center">
