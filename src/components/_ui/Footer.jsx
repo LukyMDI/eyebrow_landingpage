@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaSquareInstagram, FaSquareWhatsapp } from "react-icons/fa6";
+import { FaInstagram, FaWhatsapp, FaLocationDot } from "react-icons/fa6";
 
 import c_total from "../../../public/images/c_total.webp";
 
@@ -14,15 +14,27 @@ export default function Footer() {
                     alt="Logo do Studio"
                 />
             </div>
-            <div className="text-c_purpleC text-3xl flex w-full justify-center gap-1 mb-3">
-                <a href="https://wa.me/5582999821904/" target="_blank">
-                    <FaSquareWhatsapp />
+            <div className="text-black text-3xl flex w-full justify-center gap-2 mb-3">
+                <a
+                    href="https://wa.me/5582999821904/"
+                    target="_blank"
+                    className="bg-c_purpleC text-black flex justify-center rounded"
+                >
+                    <FaWhatsapp className="w-4/6" />
                 </a>
                 <a
                     href="https://www.instagram.com/studiocamilequatrin/"
                     target="_blank"
+                    className="bg-c_purpleC text-black flex justify-center rounded"
                 >
-                    <FaSquareInstagram />
+                    <FaInstagram className="w-4/6" />
+                </a>
+                <a
+                    href="https://www.google.com/maps/dir//Studio+Camile+Quatrin/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x7067f8639229fc7:0x2afa4f633fee04c?sa=X&ved=2ahUKEwjise6v8fmCAxWGqJUCHQ-fAEUQ9Rd6BAg-EAA&hl=pt-BR"
+                    target="_blank"
+                    className="bg-c_purpleC text-black flex justify-center rounded"
+                >
+                    <FaLocationDot className="w-7/12" />
                 </a>
             </div>
             <span className="text-[0.650rem] text-gray-500">
