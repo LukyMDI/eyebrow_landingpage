@@ -20,7 +20,7 @@ export default function Home() {
                         DO SEU OLHAR
                     </h1>
                 </div>
-                <div className="flex flex-col grow justify-evenly   md:flex-row md:mt-36">
+                <div className="flex flex-col grow justify-evenly items-center   md:flex-row md:mt-36 md:items-start">
                     <div className="w-full h-1/5 flex justify-center z-0   sm:h-1/4   md:h-3/6 md:translate-x-8 md:z-[1]">
                         <div className="relative w-5/6 border-4 border-solid border-c_purpleC rounded-md   xs:w-4/6   md:w-5/6 md:rounded-none">
                             <Image

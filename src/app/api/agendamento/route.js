@@ -88,8 +88,8 @@ export async function POST(req) {
     };
 
     const emailContent = {
-        from: "testecamile0@gmail.com",
-        to: "testecamile0@gmail.com",
+        from: process.env.USER,
+        to: process.env.USER,
         subject: "Novo agendamento",
         html: `
         <html>
