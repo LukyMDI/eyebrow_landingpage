@@ -30,7 +30,7 @@ export default function Contato() {
                 </h1>
                 <div className="w-28 h-[3px] bg-c_purpleC" />
             </div>
-            <div className="w-5/6 border border-white p-3 rounded flex flex-col items-center justify-center gap-3 bg-transparent">
+            <div className="w-5/6 border border-white p-3 rounded flex flex-col items-center justify-center gap-3 bg-transparent    md:w-4/6">
                 <textarea
                     className="h-[200px] w-full bg-transparent p-3 border border- rounded text-white resize-none"
                     placeholder="Mensagem"
