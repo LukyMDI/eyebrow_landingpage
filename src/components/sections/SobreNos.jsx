@@ -13,7 +13,7 @@ export default function SobreNos() {
             >
                 <div>
                     <h1
-                        className={`${lato.className} text-white text-2xl font-black`}
+                        className={`${lato.className} text-white text-4xl font-black`}
                     >
                         Sobre Nós
                     </h1>
@@ -27,10 +27,10 @@ export default function SobreNos() {
                             placeholder="blur"
                             quality={100}
                             alt="Imagem de uma modelo fazendo sua sobrancelha"
-                            className="rounded-md object-cover w-2/6"
+                            className="rounded-md object-cover w-3/12"
                         />
                     </div>
-                    <div className="bg-c_purpleC p-5 w-11/12 text-white rounded-md">
+                    <div className="bg-c_purpleC p-5 w-8/12 text-white rounded-md">
                         <p className="mt-5">
                             Olá! Eu sou <strong>Camile Quatrin</strong>, a mente
                             criativa por trás do{" "}
