@@ -83,10 +83,10 @@ export default function Agendamento() {
     };
 
     return (
-        <div className="w-5/6 h-3/6 flex flex-col items-center mb-5">
+        <div className="w-5/6 h-3/6 flex flex-col items-center mb-5    lg:my-60">
             <div className="mb-7">
                 <h1
-                    className={`${lato.className} text-white font-black text-2xl text-center`}
+                    className={`${lato.className} text-white font-black text-2xl text-center    lg:text-3xl`}
                 >
                     AGENDE UM HORÁRIO
                 </h1>
@@ -97,7 +97,7 @@ export default function Agendamento() {
             ) : (
                 <form
                     onSubmit={handleSubmit}
-                    className="flex w-full h-full flex-col items-center justify-evenly border border-solid border-c_purpleC rounded bg-white px-5   md:w-4/6"
+                    className="flex w-full h-full flex-col items-center justify-evenly border border-solid border-c_purpleC rounded bg-white px-5   md:w-4/6    lg:w-5/6 lg:rounded-md"
                 >
                     {result && (
                         <div

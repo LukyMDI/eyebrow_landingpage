@@ -13,14 +13,14 @@ export default function SobreNos() {
             >
                 <div>
                     <h1
-                        className={`${lato.className} text-white text-2xl font-black    md:text-4xl`}
+                        className={`${lato.className} text-white text-2xl font-black    md:text-4xl    lg:text-5xl`}
                     >
                         Sobre Nós
                     </h1>
-                    <div className="w-16 h-[3px] bg-c_purpleC" />
+                    <div className="w-16 h-[3px] bg-c_purpleC   lg:w-32" />
                 </div>
                 <div className="flex flex-col items-center w-full">
-                    <div className="relative top-6 flex justify-center">
+                    <div className="relative top-6 flex justify-center     lg:top-12">
                         <Image
                             src={eyebrow_2}
                             priority={true}
@@ -30,7 +30,7 @@ export default function SobreNos() {
                             className="rounded-md object-cover w-2/6    md:w-3/12"
                         />
                     </div>
-                    <div className="bg-c_purpleC p-5 w-11/12 text-white rounded-md    md:w-8/12">
+                    <div className="bg-c_purpleC p-5 w-11/12 text-white rounded-md    md:w-8/12    lg:w-10/12 lg:text-2xl lg:p-10">
                         <p className="mt-5">
                             Olá! Eu sou <strong>Camile Quatrin</strong>, a mente
                             criativa por trás do{" "}
