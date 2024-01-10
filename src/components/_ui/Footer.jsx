@@ -6,7 +6,7 @@ import c_total from "../../../public/images/c_total.webp";
 export default function Footer() {
     return (
         <footer className="p-3 bg-gray-900 flex flex-col items-center gap-2">
-            <div className="col-span-1 my-2 w-20">
+            <div className="col-span-1 my-2 w-20    lg:w-28">
                 <Image
                     src={c_total}
                     quality={100}
@@ -14,7 +14,7 @@ export default function Footer() {
                     alt="Logo do Studio"
                 />
             </div>
-            <div className="text-black text-3xl flex w-full justify-center gap-2 mb-3">
+            <div className="text-black text-3xl flex w-full justify-center gap-2 mb-3   lg:text-4xl">
                 <a
                     href="https://wa.me/5582999821904/"
                     target="_blank"
@@ -37,7 +37,7 @@ export default function Footer() {
                     <FaLocationDot className="w-7/12" />
                 </a>
             </div>
-            <span className="text-[0.650rem] text-gray-500">
+            <span className="text-[0.650rem] text-gray-500     lg:text-lg">
                 &copy;{new Date().getFullYear()} Studio Camile Quatrin. Todos os
                 direitos reservados
             </span>

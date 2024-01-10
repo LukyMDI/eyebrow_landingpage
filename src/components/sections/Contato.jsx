@@ -24,15 +24,15 @@ export default function Contato() {
         >
             <div>
                 <h1
-                    className={`${lato.className} text-3xl font-black text-white`}
+                    className={`${lato.className} text-3xl font-black text-white    lg:text-5xl`}
                 >
                     Contato
                 </h1>
-                <div className="w-28 h-[3px] bg-c_purpleC" />
+                <div className="w-28 h-[3px] bg-c_purpleC   lg:w-44" />
             </div>
             <div className="w-5/6 border border-white p-3 rounded flex flex-col items-center justify-center gap-3 bg-transparent    md:w-4/6">
                 <textarea
-                    className="h-[200px] w-full bg-transparent p-3 border border- rounded text-white resize-none"
+                    className="h-[200px] w-full bg-transparent p-3 border border- rounded text-white resize-none    lg:h-[300px] lg:text-xl"
                     placeholder="Mensagem"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
