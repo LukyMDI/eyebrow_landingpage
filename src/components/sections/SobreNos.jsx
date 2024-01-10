@@ -30,7 +30,7 @@ export default function SobreNos() {
                             className="rounded-md object-cover w-2/6    md:w-3/12"
                         />
                     </div>
-                    <div className="bg-c_purpleC p-5 w-11/12 text-white rounded-md    md:w-8/12    lg:w-10/12 lg:text-2xl lg:p-10">
+                    <div className="bg-c_purpleC p-5 w-11/12 text-white rounded-md    md:w-8/12    lg:w-10/12 lg:text-2xl lg:p-10   xl:text-3xl">
                         <p className="mt-5">
                             Olá! Eu sou <strong>Camile Quatrin</strong>, a mente
                             criativa por trás do{" "}

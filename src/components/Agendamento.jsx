@@ -97,7 +97,7 @@ export default function Agendamento() {
             ) : (
                 <form
                     onSubmit={handleSubmit}
-                    className="flex w-full h-full flex-col items-center justify-evenly border border-solid border-c_purpleC rounded bg-white px-5   md:w-4/6    lg:w-5/6 lg:rounded-md"
+                    className="flex w-full h-full flex-col items-center justify-evenly border border-solid border-c_purpleC rounded bg-white px-5   md:w-4/6    lg:w-5/6 lg:rounded-md     xl:text-2xl"
                 >
                     {result && (
                         <div
