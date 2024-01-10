@@ -11,9 +11,9 @@ export default function Home() {
                 className="bg-[url('../../public/images/bg-1.webp')] bg-cover bg-no-repeat w-full h-screen flex flex-col items-center"
             >
                 <div
-                    className={`${lato.className} flex font-playfair flex-col items-center text-white font-black text-3xl self-center mt-32   md:text-5xl   lg:mt-60`}
+                    className={`${lato.className} flex font-playfair flex-col items-center text-white font-black text-3xl self-center mt-32   md:text-5xl   lg:mt-60    xl:text-6xl`}
                 >
-                    <h1 className="text-lg   md:text-2xl">
+                    <h1 className="text-lg   md:text-2xl    xl:text-3xl">
                         REALÇANDO A BELEZA
                     </h1>
                     <h1 className="border-b-4 border-c_purpleC">
@@ -21,7 +21,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="flex flex-col grow justify-evenly items-center   md:flex-row md:mt-36 md:items-start">
-                    <div className="w-full h-1/5 flex justify-center z-0   sm:h-1/4   md:h-3/6 md:translate-x-8 md:z-[1]">
+                    <div className="w-full h-1/5 flex justify-center z-0   sm:h-1/4   md:h-3/6 md:translate-x-8 md:z-[1]    xl:translate-x-10">
                         <div className="relative w-5/6 border-4 border-solid border-c_purpleC rounded-md   xs:w-4/6   md:w-5/6 md:rounded-none">
                             <Image
                                 src={modelo_1}
@@ -33,9 +33,9 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                    <div className="border-4 rounded-md border-white w-11/12 bg-black/70 p-5 overflow-auto box-border   xs:w-9/12   sm:p-10   md:w-5/6 md:h-3/6 md:-translate-x-8 md:translate-y-36 md:rounded-none">
+                    <div className="border-4 rounded-md border-white w-11/12 bg-black/70 p-5 overflow-auto box-border   xs:w-9/12   sm:p-10   md:w-5/6 md:h-3/6 md:-translate-x-8 md:translate-y-36 md:rounded-none    xl:-translate-x-10">
                         <div
-                            className={`${lato.className} text-white text-center font-black text-lg    lg:text-2xl`}
+                            className={`${lato.className} text-white text-center font-black text-lg    lg:text-2xl    xl:text-3xl`}
                         >
                             <h1>STUDIO</h1>
                             <h1>CAMILE QUATRIN</h1>
@@ -47,7 +47,7 @@ export default function Home() {
                             </span>
                             <div className="w-16 rounded-full bg-gray-500 h-[3px]" />
                         </div>
-                        <div className="text-white text-justify mt-3    lg:text-xl">
+                        <div className="text-white text-justify mt-3    lg:text-xl     xl:text-2xl">
                             <p>
                                 Transforme o olhar, eleve a confiança. Descubra
                                 o poder de sobrancelhas perfeitamente moldadas e

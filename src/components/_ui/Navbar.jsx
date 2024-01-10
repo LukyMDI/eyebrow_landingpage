@@ -22,7 +22,7 @@ export default function Navbar() {
             <div className="col-span-1 md:hidden justify-self-end mr-10 z-10">
                 <MobileMenu />
             </div>
-            <nav className="hidden md:col-span-1 md:flex flex-row justify-end items-center gap-3 pr-8 text-white    lg:text-xl">
+            <nav className="hidden md:col-span-1 md:flex flex-row justify-end items-center gap-3 pr-8 text-white    lg:text-xl      xl:text-2xl">
                 <ul className="flex flex-row gap-6">
                     <li className="li-nav">
                         <a href="#">Home</a>
