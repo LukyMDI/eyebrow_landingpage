@@ -11,7 +11,7 @@ export default function Home() {
                 className="bg-[url('../../public/images/bg-1.webp')] bg-cover bg-no-repeat w-full h-screen flex flex-col items-center"
             >
                 <div
-                    className={`${lato.className} flex font-playfair flex-col items-center text-white font-black text-3xl self-center mt-32   md:text-5xl`}
+                    className={`${lato.className} flex font-playfair flex-col items-center text-white font-black text-3xl self-center mt-32   md:text-5xl   lg:mt-60`}
                 >
                     <h1 className="text-lg   md:text-2xl">
                         REALÇANDO A BELEZA
@@ -35,19 +35,19 @@ export default function Home() {
                     </div>
                     <div className="border-4 rounded-md border-white w-11/12 bg-black/70 p-5 overflow-auto box-border   xs:w-9/12   sm:p-10   md:w-5/6 md:h-3/6 md:-translate-x-8 md:translate-y-36 md:rounded-none">
                         <div
-                            className={`${lato.className} text-white text-center font-black text-lg`}
+                            className={`${lato.className} text-white text-center font-black text-lg    lg:text-2xl`}
                         >
                             <h1>STUDIO</h1>
                             <h1>CAMILE QUATRIN</h1>
                         </div>
-                        <div className="flex flex-row justify-center items-center gap-3 mt-1">
+                        <div className="flex flex-row justify-center items-center gap-3 mt-1    lg:mt-3">
                             <div className="w-16 rounded-full bg-gray-500 h-[3px]" />
-                            <span className="text-c_purpleC font-black">
+                            <span className="text-c_purpleC font-black     lg:text-lg">
                                 Since 2023
                             </span>
                             <div className="w-16 rounded-full bg-gray-500 h-[3px]" />
                         </div>
-                        <div className="text-white text-justify mt-3">
+                        <div className="text-white text-justify mt-3    lg:text-xl">
                             <p>
                                 Transforme o olhar, eleve a confiança. Descubra
                                 o poder de sobrancelhas perfeitamente moldadas e
